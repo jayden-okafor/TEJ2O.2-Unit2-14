@@ -55,34 +55,34 @@ input.onButtonPressed(Button.A, function () {
 
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
-    sprite = game.createSprite(4, 4)
-    loopCounterX = 4
-    loopCounterY = 4
+    sprite = game.createSprite(0, 0)
+    loopCounterX = 0
+    loopCounterY = 0
 
-    while (loopCounterY >= 0) {
+    while (loopCounterY < 5) {
         sprite.set(LedSpriteProperty.Y, loopCounterY)
-        loopCounterY--
+        loopCounterY++
         basic.pause(500)
     }
 
-    while (loopCounterX >= 0) {
+    while (loopCounterX < 5) {
         sprite.set(LedSpriteProperty.X, loopCounterX)
-        loopCounterX--
+        loopCounterX++
         basic.pause(500)
     }
 
-    if (loopCounterY = -1) {
-        while (loopCounterY < 5) {
+    if (loopCounterY = 4) {
+        while (loopCounterY >= 0) {
             sprite.set(LedSpriteProperty.Y, loopCounterY)
-            loopCounterY++
+            loopCounterY--
             basic.pause(500)
         }
     }
 
-    if (loopCounterX = -1) {
-        while (loopCounterX < 5) {
+    if (loopCounterX = 4) {
+        while (loopCounterX >= 0) {
             sprite.set(LedSpriteProperty.X, loopCounterX)
-            loopCounterX++
+            loopCounterX--
             basic.pause(500)
         }
     }
