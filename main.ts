@@ -21,39 +21,35 @@ input.onButtonPressed(Button.A, function () {
     loopCounterX = 0
     loopCounterY = 0
 
-// move the sprite right by 1 each time
+    // move the sprite right by 1 each time
     while (loopCounterX < 5) {
         sprite.set(LedSpriteProperty.X, loopCounterX)
         loopCounterX++
         basic.pause(500)
     }
 
-// move the sprite down by 1 each time
+    // move the sprite down by 1 each time
     while (loopCounterY < 5) {
         sprite.set(LedSpriteProperty.Y, loopCounterY)
         loopCounterY++
         basic.pause(500)
     }
 
-// move the sprite left by 1 each time
-    if (loopCounterX == 5) {
+    // move the sprite left by 1 each time
         while (loopCounterX >= 0) {
             sprite.set(LedSpriteProperty.X, loopCounterX)
             loopCounterX--
             basic.pause(500)
         }
-    }
 
-// move the sprite right by 1 each time
-    if (loopCounterY == 5) {
+    // move the sprite right by 1 each time
         while (loopCounterY >= 0) {
             sprite.set(LedSpriteProperty.Y, loopCounterY)
             loopCounterY--
             basic.pause(500)
         }
-    }
 
-// remove sprite and show happy face
+    // remove sprite and show happy face
     sprite.delete()
     basic.clearScreen()
     basic.showIcon(IconNames.Happy)
@@ -66,39 +62,35 @@ input.onButtonPressed(Button.B, function () {
     loopCounterX = 0
     loopCounterY = 0
 
-// move the sprite down by 1 each time
+    // move the sprite down by 1 each time
     while (loopCounterY < 5) {
         sprite.set(LedSpriteProperty.Y, loopCounterY)
         loopCounterY++
         basic.pause(500)
     }
 
-// move the sprite right by 1 each time
+    // move the sprite right by 1 each time
     while (loopCounterX < 5) {
         sprite.set(LedSpriteProperty.X, loopCounterX)
         loopCounterX++
         basic.pause(500)
     }
 
-// move the sprite up by 1 each time
-    if (loopCounterY == 5) {
+    // move the sprite up by 1 each time
         while (loopCounterY >= 0) {
             sprite.set(LedSpriteProperty.Y, loopCounterY)
             loopCounterY--
             basic.pause(500)
         }
-    }
 
-// move the sprite left by 1 each time
-    if (loopCounterX == 5) {
+    // move the sprite left by 1 each time
         while (loopCounterX >= 0) {
             sprite.set(LedSpriteProperty.X, loopCounterX)
             loopCounterX--
             basic.pause(500)
         }
-    }
 
-// remove sprite and show happy face
+    // remove sprite and show happy face
     sprite.delete()
     basic.clearScreen()
     basic.showIcon(IconNames.Happy)
