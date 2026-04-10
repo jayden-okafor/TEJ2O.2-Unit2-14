@@ -32,7 +32,7 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(500)
     }
 
-    if (loopCounterX = 4) {
+    if (loopCounterX == 5) {
         while (loopCounterX >= 0) {
             sprite.set(LedSpriteProperty.X, loopCounterX)
             loopCounterX--
@@ -40,7 +40,7 @@ input.onButtonPressed(Button.A, function () {
         }
     }
 
-    if (loopCounterY = 4) {
+    if (loopCounterY == 5) {
         while (loopCounterY >= 0) {
             sprite.set(LedSpriteProperty.Y, loopCounterY)
             loopCounterY--
@@ -71,7 +71,7 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(500)
     }
 
-    if (loopCounterY = 4) {
+    if (loopCounterY == 5) {
         while (loopCounterY >= 0) {
             sprite.set(LedSpriteProperty.Y, loopCounterY)
             loopCounterY--
@@ -79,7 +79,7 @@ input.onButtonPressed(Button.B, function () {
         }
     }
 
-    if (loopCounterX = 4) {
+    if (loopCounterX == 5) {
         while (loopCounterX >= 0) {
             sprite.set(LedSpriteProperty.X, loopCounterX)
             loopCounterX--
