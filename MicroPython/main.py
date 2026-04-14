@@ -90,3 +90,4 @@ while True:
 
         display.clear()
         display.show(Image.HAPPY)
+
